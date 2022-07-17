@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <head>
-
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="utf-8">
 </head>
 <body>
-    <h2 id="clock">00:00:00</h2>
+    
+    <section>
+    <!-- 로그인폼 -->
+    <div class="row first">
     <form class="hidden" id="login-form">
-
+        <input type="text" placeholder="What is your name?">
+        <button>Log In</button>
     </form>
-    <h1 class="hidden" id="greeting"></h1>
+    <h1 id="greeting" class="hidden"></h1>
+    </div>
+
+    <div class="row">
+        <!-- 시계 -->
+    <div class="clock">
+    <h2 id="clock1"></h2>
+    <h2 id="clock2"></h2></div>
+
+    
+        <!-- 날씨 -->
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    </div>
+
+    <!-- 투두리스트 -->
+    <div class="">
+    <h3>To Do List</h3>
     <form id="todo-form">
         <input type="text" placeholder="write a to do and press enter" require />
-
     </form>
     <ul id="todo-list">
-        
     </ul>
+    </div>
+
     
+
+    </section>
+    
+    <script src="js/login.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
