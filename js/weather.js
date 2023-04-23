@@ -21,6 +21,6 @@ function onGeoOk(position){
     });
 }
 function onGeoError(){
-    alert("can't find you. No weather for you.")
+    alert('위치를 알 수 없어 날씨정보를 제공할 수 없어요');
 }
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);

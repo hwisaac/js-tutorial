@@ -3,13 +3,10 @@ bgArray = ["img/img01.jpg","img/img02.jpg","img/img03.jpg","img/img04.jpg","img/
 function randBg(){
   const randValue = Math.floor(Math.random() * 10);
   const body = document.querySelector('body');
-  const img = document.createElement("img");
-
+  const img = document.createElement('img');
   img.src = bgArray[randValue];
-  img.classList.add('backgroundImg')
-  
+  img.classList.add('backgroundImg');
   body.appendChild(img);
-  
 }
 
 randBg();
